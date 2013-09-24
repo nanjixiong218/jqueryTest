@@ -1,0 +1,40 @@
+img {
+	display:none;
+	margin:0 auto;
+
+}
+
+.name{
+	/*float:left; 浮动后无法居中*/
+	display:inline;
+	
+}
+.xinghao {
+	
+	
+	display:none;
+}
+.yangshi {
+	display:none;
+}
+#head p{
+text-align:center;
+}
+#head{
+text-align:center;
+width:100%;
+height:200px;
+}
+#main{
+margin:0 auto;
+text-align:center;
+width:100%;
+height:50px;
+
+}
+#display{
+text-align:center;
+width:100%;
+height:auto;
+
+}

@@ -1,0 +1,16 @@
+table {
+width:400px;
+height:300px;
+border:1px solid black;
+border-collapse:collapse;//td边框合并
+}
+table  th,td{
+border:1px solid black;
+width:50%;
+}
+tbody th{
+background-color:red;//th的颜色会覆盖tr的颜色
+}
+thead {
+background-color:blue;
+}

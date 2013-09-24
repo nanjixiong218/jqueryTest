@@ -1,0 +1,5 @@
+visiblity和display:none的区别：visiblity留位置
+animate和show，hide，toggle的区别：animate可以动态控整个css的变化，其他的只是控制display。
+用data方法进行数据缓存，防止每次都请求服务器，提高性能。
+image对象进行图片预装。
+浮动无法居中。

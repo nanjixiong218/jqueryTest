@@ -1,0 +1,120 @@
+$(function(){
+	var windows = $(window);;
+	var browerwidth; 
+	var browerheight; 
+	var scrollleft;
+	var scrolltop;
+	var cwinwidth;
+	var cwinheight;
+	var left;
+	var top;
+	var centerwin;
+	var leftwin;
+	var rightwin;
+	function setBaseSize(){
+		
+		browerwidth = windows.width();
+		browerheight = windows.height();
+		scrollleft = windows.scrollLeft();
+		scrolltop = windows.scrollTop();
+
+	}
+	function computecenter(browerwidth,browerheight,scrollleft,scrolltop,cwinwidth,cwinheight){
+		left = (browerwidth-cwinwidth)/2+scrollleft;
+		top = (browerheight-cwinheight)/2+scrolltop;
+	}
+	function computeleft(browerwidth,browerheight,scrollleft,scrolltop,cwinwidth,cwinheight){
+		left =scrollleft;
+		top = (browerheight-cwinheight)+scrolltop;
+	}
+	function computeright1(browerwidth,browerheight,scrollleft,scrolltop,cwinwidth,cwinheight){
+		left =scrollleft+browerwidth-cwinwidth;
+		top = browerheight+scrolltop;
+	}
+	function computeright2(browerwidth,browerheight,scrollleft,scrolltop,cwinwidth,cwinheight){
+		left =scrollleft+browerwidth-cwinwidth;
+		top = (browerheight-cwinheight)+scrolltop;
+	}
+	$("#btn_center").click(function(){
+		centerwin = $("#center");
+		setBaseSize();
+		cwinwidth = centerwin.width();
+		cwinheight = centerwin.height();
+		computecenter(browerwidth,browerheight,scrollleft,scrolltop,cwinwidth,cwinheight);
+		centerwin.css("left",left).css("top",top).show("3000");
+		var img_close = centerwin.children(".head").children("img");
+		img_close.click(function(){
+			centerwin.hide("3000");
+		});
+	});
+	$("#btn_left").click(function(){
+		leftwin = $("#left");
+		setBaseSize();
+		cwinwidth = leftwin.outerWidth();
+		cwinheight = leftwin.outerHeight();
+		computeleft(browerwidth,browerheight,scrollleft,scrolltop,cwinwidth,cwinheight);
+		leftwin.css("left",left).css("top",top).show("3000");
+		var img_close = leftwin.children(".head").children("img");
+		img_close.click(function(){
+			leftwin.hide("3000");
+		});
+	});
+	function rightdisplay(){
+		rightwin = $("#right");
+		setBaseSize();
+		cwinwidth = rightwin.outerWidth();
+		cwinheight = rightwin.outerHeight();
+		
+		computeright1(browerwidth,browerheight,scrollleft,scrolltop,cwinwidth,cwinheight);
+		rightwin.css("left",left).css("top",top).show();
+		var img_close = rightwin.children(".head").children("img");
+		img_close.click(function(){
+			rightwin.hide("3000");
+		});
+		computeright2(browerwidth,browerheight,scrollleft,scrolltop,cwinwidth,cwinheight);
+		rightwin.animate({"left":left,"top":top},5000).animate({"opacity":0},5000);
+		/*setTimeout(function(){
+		cwinwidth	rightwin.hide();
+		},"5000");
+		*/
+		}
+	windows.scroll(function(){
+		setBaseSize();
+		if(leftwin.css("display")!="none")
+		{	
+		computeleft(browerwidth,browerheight,scrollleft,scrolltop,cwinwidth,cwinheight);
+		leftwin.css("left",left).css("top",top).show("3000");
+		}
+		if(centerwin.css("display")!="none")
+		{
+		computecenter(browerwidth,browerheight,scrollleft,scrolltop,cwinwidth,cwinheight);		
+		centerwin.css("left",left).css("top",top).show("3000");
+		}
+		if(rightwin.css("display")!="none")
+		{
+		computeright2(browerwidth,browerheight,scrollleft,scrolltop,cwinwidth,cwinheight);
+		rightwin.css("left",left).css("top",top).css("opacity","1").show("3000");
+		}
+	
+	});
+	windows.resize(function(){
+		setBaseSize();
+		if(leftwin.css("display")!="none")
+		{	
+		computeleft(browerwidth,browerheight,scrollleft,scrolltop,cwinwidth,cwinheight);
+		leftwin.css("left",left).css("top",top).show("3000");
+		}
+		if(centerwin.css("display")!="none")
+		{
+		computecenter(browerwidth,browerheight,scrollleft,scrolltop,cwinwidth,cwinheight);		
+		centerwin.css("left",left).css("top",top).show("3000");
+		}
+		if(rightwin.css("display")!="none")
+		{
+		computeright2(browerwidth,browerheight,scrollleft,scrolltop,cwinwidth,cwinheight);
+		rightwin.css("left",left).css("top",top).css("opacity","1").show("3000");
+		}
+	});
+	rightdisplay();
+	
+})
