@@ -1,0 +1,8 @@
+快速滑动鼠标是的无意操作：用好延迟处理。
+IE中有问题，有个offset。
+加载jsp页面有问题。
+
+IE中会不断的显示隐藏图片
+ajax请求本地文件时chrome 中有Origin null is not allowed by Access-Control-Allow-Origin问题
+firefox没问题
+Ie中有很多问题

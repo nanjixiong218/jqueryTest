@@ -1,0 +1,64 @@
+ul ,li{
+	margin:0;
+	padding:0;
+	list-style:none;
+	
+}
+#tabFirst li{
+	float:left;
+	background-color:grey;
+	color:white;
+	padding:5px;
+	margin-right:2px;
+	border:1px solid white;
+}
+#tabFirst li.tabin{
+	background-color:black;
+	border:1px solid black;
+}
+div.first{
+	clear:left;
+	background-color:black;
+	color:white;
+	width:300px;
+	height:100px;
+	padding:10px;
+
+	display:none;
+		
+}
+div.contentin{
+	display:block;
+	
+}
+#tabSecond li{
+	float:left;
+	padding:5px;
+	margin-right:2px;
+	background-color:white;
+	color:blue;
+}
+#content {
+
+	clear:left;
+	background-color:red;
+	width:500px;
+	height:100px;
+	padding：0px;
+	border:1px solid black;
+	display:block;
+	position:relative;
+	top:-1px;
+	z-index:1;
+
+}
+#tabSecond li.tabin{
+	position:relative;
+	background-color:red;
+	border:1px solid black;
+	border-bottom:0px solid black;
+	z-index:100;/* z-index必须在position为relative或absolute时才生效*/
+}
+img {
+	display:none;
+}

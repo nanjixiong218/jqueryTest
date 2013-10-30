@@ -99,21 +99,21 @@ $('.bubblewrap').imgbubbles({factor:1.5});
     <div class="center">
   
   		<ul id="first_line" class="bubblewrap">
-		<li><a><img src="../pictures/2.jpg" alt="1" width="136" height="120" style="cursor:hand" onclick="open_new(1)"><span>财务指标分析</span></a></li>
-		<li><a><img src="../pictures/3.jpg" alt="1" width="136" height="120" style="cursor:hand" onclick="open_new(2)"><span>结构分析</span></a></li>
-		<li><a><img src="../pictures/4.jpg" alt="1" width="136" height="120" style="cursor:hand" onclick="open_new(3)"><span>合作生产分析</span></a></li>
+		<li><a><img src="../pictures/2.jpg" width="136" height="120" style="cursor:hand" onclick="open_new(1)"><span>财务指标分析</span></a></li>
+		<li><a><img src="../pictures/3.jpg" width="136" height="120" style="cursor:hand" onclick="open_new(2)"><span>结构分析</span></a></li>
+		<li><a><img src="../pictures/4.jpg" width="136" height="120" style="cursor:hand" onclick="open_new(3)"><span>合作生产分析</span></a></li>
 		
 		</ul>
   		<ul id="secondl_ine" class="bubblewrap">
-		<li><a><img src="../pictures/5.jpg" alt="1" width="136" height="120" style="cursor:hand" onclick="open_new(4)"><span>总量分析</span></a></li>
-		<li><a><img src="../pictures/6.jpg" alt="1" width="136" height="120" style="cursor:hand" onclick="open_new(5)"><span>存销比预警</span></a></li>
-		<li><a><img src="../pictures/7.jpg" alt="1" width="136" height="120" style="cursor:hand" onclick="open_new(6)"><span>经营目标监控</span></a></li>
+		<li><a><img src="../pictures/5.jpg" width="136" height="120" style="cursor:hand" onclick="open_new(4)"><span>总量分析</span></a></li>
+		<li><a><img src="../pictures/6.jpg" width="136" height="120" style="cursor:hand" onclick="open_new(5)"><span>存销比预警</span></a></li>
+		<li><a><img src="../pictures/7.jpg" width="136" height="120" style="cursor:hand" onclick="open_new(6)"><span>经营目标监控</span></a></li>
 		
 		</ul>
   		<ul id="third_line" class="bubblewrap">
-		<li><a><img src="../pictures/8.png" alt="1" width="136" height="120" style="cursor:hand" onclick="open_new(7)"><span>按商业分析</span></a></li>
-		<li><a><img src="../pictures/9.png" alt="1" width="136" height="120" style="cursor:hand" onclick="open_new(8)"><span>双十五品牌分析</span></a></li>
-		<li><a><img src="../pictures/10.png" alt="1" width="136" height="120" style="cursor:hand" onclick="open_new(9)"><span>原辅料保障分析</span></a></li>
+		<li><a><img src="../pictures/8.png" width="136" height="120" style="cursor:hand" onclick="open_new(7)"><span>按商业分析</span></a></li>
+		<li><a><img src="../pictures/9.png" width="136" height="120" style="cursor:hand" onclick="open_new(8)"><span>双十五品牌分析</span></a></li>
+		<li><a><img src="../pictures/10.png" width="136" height="120" style="cursor:hand" onclick="open_new(9)"><span>原辅料保障分析</span></a></li>
 		</ul>
     </div>
     <div class="right">

@@ -1,0 +1,17 @@
+<!DOCUMENT>
+<html>
+<head>
+<title>jquery test</title>
+<link rel="stylesheet" type="text/css" href="css/slider.css"/>
+<script type="text/javascript" src="js/slider.js"></script>
+</head>
+<body>
+	<div class="defaultbar">
+		<div class="jquery-completed"></div>
+		<div class="jquery-jslider"></div>
+	</div>
+</body>
+
+</html>
+	
+ 
