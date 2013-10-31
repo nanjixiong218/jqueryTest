@@ -94,7 +94,6 @@ $(function(){
 		{
 		computeright2(browerwidth,browerheight,scrollleft,scrolltop,cwinwidth,cwinheight);
 		rightwin.css("left",left).css("top",top).css("opacity","1").show("3000");
-		rightwin.css("display","none");
 		}
 	
 	});
