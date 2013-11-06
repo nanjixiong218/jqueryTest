@@ -1,5 +1,5 @@
 $(function(){
-	var windows = $(window);;
+	var windows = $(window);
 	var browerwidth; 
 	var browerheight; 
 	var scrollleft;
@@ -11,30 +11,7 @@ $(function(){
 	var centerwin;
 	var leftwin;
 	var rightwin;
-	function setBaseSize(){
-		
-		browerwidth = windows.width();
-		browerheight = windows.height();
-		scrollleft = windows.scrollLeft();
-		scrolltop = windows.scrollTop();
 
-	}
-	function computecenter(browerwidth,browerheight,scrollleft,scrolltop,cwinwidth,cwinheight){
-		left = (browerwidth-cwinwidth)/2+scrollleft;
-		top = (browerheight-cwinheight)/2+scrolltop;
-	}
-	function computeleft(browerwidth,browerheight,scrollleft,scrolltop,cwinwidth,cwinheight){
-		left =scrollleft;
-		top = (browerheight-cwinheight)+scrolltop;
-	}
-	function computeright1(browerwidth,browerheight,scrollleft,scrolltop,cwinwidth,cwinheight){
-		left =scrollleft+browerwidth-cwinwidth;
-		top = browerheight+scrolltop;
-	}
-	function computeright2(browerwidth,browerheight,scrollleft,scrolltop,cwinwidth,cwinheight){
-		left =scrollleft+browerwidth-cwinwidth;
-		top = (browerheight-cwinheight)+scrolltop;
-	}
 	$("#btn_center").click(function(){
 		centerwin = $("#center");
 		setBaseSize();

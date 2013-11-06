@@ -12,7 +12,8 @@
 	<link rel="stylesheet" type="text/css" href="../css/style.css">
 	
 <script language="javascript" src="../js/jquery-1.4.2.js"></script>
-<script language="javascript" src="../js/change.js"></script>
+<script language="javascript" src="../js/win.js">
+<script language="javascript" src="../js/winPopFn.js"></script>
 
 </head>
 <body >
@@ -43,7 +44,5 @@
 			我是右边窗口的内容！
 		</div>
 	</div>
-</body>
-</body>
 </body>
 </html>

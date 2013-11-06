@@ -1,0 +1,3 @@
+$(function(){
+	$("#center").winPop();
+})
