@@ -27,7 +27,7 @@
 				theWin.css({width:opts.width,height:opts.height}).css("left",left).css("top",top).show();
 				var img_close = theWin.children(".head").children("img");
 				img_close.click(function(){
-					the.hide("3000");
+					theWin.hide("3000");
 				});
 		
 			})	
@@ -48,8 +48,13 @@
 		cwinwidth = opts.width;
 		cwinheight = opts.height;
 		if(opts.position=='center'){
-			 computecenter(browerwidth,browerheight,scrollleft,scrolltop,cwinwidth,cwinheight);
+			computecenter(browerwidth,browerheight,scrollleft,scrolltop,cwinwidth,cwinheight);
+		}else if(opts.position=='left'){
+			computeleft(browerwidth,browerheight,scrollleft,scrolltop,cwinwidth,cwinheight);
+		}else if(opts.position=='right'){
+			computeright2(browerwidth,browerheight,scrollleft,scrolltop,cwinwidth,cwinheight)
 		}
+		
 	}
 	function computecenter(browerwidth,browerheight,scrollleft,scrolltop,cwinwidth,cwinheight){
 		left = (browerwidth-cwinwidth)/2+scrollleft;
