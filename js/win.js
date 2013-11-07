@@ -15,8 +15,8 @@
 	winPop:function(options){
 		var defaults={
 			position:'center',
-			width:'100px',
-			height:'100px'
+			width:'500',//不能用500px,加上px在进行计算的时候会被当成字符串。
+			height:'500'
 			};
 		var opts =$.extend(defaults,options);
 	
@@ -24,7 +24,7 @@
 				var theWin = $(this);
 				setBaseSize();
 				compute(opts);
-				theWin.css({width:opts.width,height:opt.height}).css("left",left).css("top",top).show();
+				theWin.css({width:opts.width,height:opts.height}).css("left",left).css("top",top).show();
 				var img_close = theWin.children(".head").children("img");
 				img_close.click(function(){
 					the.hide("3000");
